@@ -4,6 +4,10 @@
 - ~~Slider for brush Size~~
 - Brush Pointer
 - Download as PNG/JPEG
+- Line Tool
+- Eraser Tool
+- Undo
+- Basic Shapes
 - ~~Clear Canvas~~
 
 
@@ -11,3 +15,4 @@
 ---
 ## Bugs
 - ~~Inaccurate mouse draw positioning~~
+- When mouse is just tapped, no ink comes out
