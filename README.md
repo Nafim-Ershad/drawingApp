@@ -3,7 +3,7 @@
 - ~~Color wheel for brush~~
 - ~~Slider for brush Size~~
 - Brush Pointer
-- Download as PNG/JPEG
+- ~~Download as PNG/JPEG~~
 - Line Tool
 - ~~Eraser Tool~~
 - Undo

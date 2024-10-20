@@ -96,6 +96,14 @@ function Artboard(): ReactNode {
             });
             //window.addEventListener('resize', handleResize);
             setCTXSize();
+            if(ctx)
+            {
+                ctx.fillStyle = "#FFFFFF";
+                ctx.beginPath();
+                ctx.rect(0, 0, canvas.width, canvas.height);
+                ctx.fill();
+                ctx.closePath();
+            }
         }
 
         // Cleanup function: Remove the event listener when the component unmounts

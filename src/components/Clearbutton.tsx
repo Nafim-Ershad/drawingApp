@@ -7,7 +7,15 @@ function Clearbutton(): ReactNode {
     const {context, canvas, isClearable} = appState;
 
     const clearScreen = () => {
-        if(canvas) context?.clearRect(0, 0, canvas.width, canvas.height);
+        if(canvas && context) 
+        {
+            context.clearRect(0, 0, canvas.width, canvas.height)
+            context.fillStyle = "#FFFFFF";
+            context.beginPath();
+            context.rect(0, 0, canvas.width, canvas.height);
+            context.fill();
+            context.closePath();
+        };
 
         setAppState({
             ...appState,
