@@ -62,7 +62,7 @@ function Artboard(): ReactNode {
         // updateMousePos(e);
         // ctx.lineTo(e.clientX, e.clientY); // Again draw a line to the mouse postion
         ctx.lineTo(posX!, posY!);
-        ctx.strokeStyle = appState.brushState.color; // Set the color as the saved context
+        ctx.strokeStyle = appState.brushState.type === 'pen' ? appState.brushState.color : '#FFFFFF'; // Set the color as the saved context
         ctx.lineWidth = appState.brushState.size; // Set the size to the saved context
         // Set the line cap to round
         ctx.lineCap = 'round';
@@ -94,10 +94,10 @@ function Artboard(): ReactNode {
                 context: ctx,
                 canvas
             });
-            // window.addEventListener('resize', handleResize);
+            //window.addEventListener('resize', handleResize);
             setCTXSize();
-
         }
+
         // Cleanup function: Remove the event listener when the component unmounts
         // return () => {
         //     window.removeEventListener('resize', handleResize);

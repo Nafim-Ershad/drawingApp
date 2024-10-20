@@ -16,7 +16,7 @@ function ColorSelector(): ReactNode {
     }
     return (
         <div className='w-full h-fit py-4 px-2 flex items-center justify-between'>
-                <span>Color</span>
+                <span className='pointer-events-none'>Brush Color</span>
                 <input 
                     type="color" 
                     onChange={handleColorChange}

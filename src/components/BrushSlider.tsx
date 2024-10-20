@@ -17,8 +17,8 @@ function BrushSlider(): ReactNode {
     return (
         <div className='w-full h-fit py-4 px-2 flex flex-col items-center justify-center'>
             <div className='w-full h-6 my-1 flex items-center justify-between'>
-                <span>Brush Size</span>
-                <span>{ appState.brushState.size / 10 }</span>
+                <span className='pointer-events-none'>Brush Size</span>
+                <span className='pointer-events-none'>{ appState.brushState.size / 10 }</span>
             </div>
             <input 
                 type="range" 

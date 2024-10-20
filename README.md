@@ -5,7 +5,7 @@
 - Brush Pointer
 - Download as PNG/JPEG
 - Line Tool
-- Eraser Tool
+- ~~Eraser Tool~~
 - Undo
 - Basic Shapes
 - ~~Clear Canvas~~
@@ -16,3 +16,4 @@
 ## Bugs
 - ~~Inaccurate mouse draw positioning~~
 - When mouse is just tapped, no ink comes out
+- Eraser tool acts as another type of brush tool

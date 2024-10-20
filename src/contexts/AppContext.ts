@@ -3,7 +3,8 @@ import { createContext, Dispatch, SetStateAction } from "react";
 export type tApp = {
     brushState: {
         color: string,
-        size: number
+        size: number,
+        type: 'eraser' | 'pen'
     },
     isClearable: boolean,
     context: CanvasRenderingContext2D | null,
@@ -18,7 +19,8 @@ export interface iApp {
 export const initialState: tApp = {
     brushState: {
         color: "#000000",
-        size: 50
+        size: 20,
+        type: 'pen'
     },
     isClearable: false,
     context: null,
